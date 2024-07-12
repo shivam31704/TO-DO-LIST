@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Archivo Black Static;
+
+}
+
+body
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(149, 0, 255), rgb(234, 71, 204));
+}
+
+.list
+ {
+    position: relative;
+    background-color: #ffb3f2;
+    width: 350px;
+    border-radius: 20px;
+   
+}
+
+.list h2
+{
+    background: #6d29ba;
+    color: #fff;
+    padding: 10px 50px ;
+    font-weight: 600;
+    border-radius: .9px;  
+}
+
+.list ul 
+{
+    position: relative;
+    padding: 20px;
+}
+
+.list ul li
+{
+    position: relative;
+    list-style: none;
+    padding: 15px 0;
+    border-bottom: 1px solid #6d29ba;
+}
+
+.list ul li label
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.list ul li label input
+{
+    visibility: hidden;
+    appearance: none;
+}
+
+.list ul li label p
+{
+    position: absolute;
+}
+
+.list ul li label span
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul li label span:before 
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    border-left: 4px solid#000000;
+    border-bottom: 2px solid#000000;
+    transform: rotate(-50deg);
+
+}
+.list ul li label input:checked~p{
+    text-decoration: line-through;
+    color: #db2929;
+}
+
+.list ul li label input:checked~span{
+    background: #6d29ba;
+    border-bottom: 2px solid #db2929;
+
+}
+
+
+.list ul li label input:checked~span::before{
+    border-left: 2px solid #db2929;
+    border-bottom: 2px solid #db2929;
+}
+
+
+
